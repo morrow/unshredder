@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Unshredder</title>
+    <script type="text/javascript" src="./unshredder.js"></script>
+  </head>
+  <body>
+    <button onclick="unshredder.unshred()">Unshred</button>
+    <button onclick="unshredder.shred()">Shred</button>
+    <div id="image">
+      <img src="./painting.jpg" />
+    </div>
+  </body>
+  <script type="text/javascript">
+  window.onload = function(){
+    window.unshredder = new Unshredder(image);
+  };
+  </script>
+</html>
